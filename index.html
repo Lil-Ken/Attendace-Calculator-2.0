@@ -50,7 +50,7 @@
           $('#result').html('<div class="alert alert-danger" role="alert">You cannot exceed 80% of total hours (' + totalHours + ' hours)</div>');
         } else {
           var remainingHours = totalHours - passHours;
-          if (remainingHours > 0){
+          if ((remainingHours-hours) > 0){
             $('#result').html('<div class="alert alert-success" role="alert">You can ponteng ' + (remainingHours-hours).toFixed(2) + ' more hours in ' + subject + '</div>');
           }
           else{
